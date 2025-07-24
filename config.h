@@ -13,14 +13,14 @@ static const char unknown_str[] = "n/a";
 /* output formats */
 static const struct arg args[] = {
 	/* function, format, argument */
-  { netspeed_rx, "%sB/s   ", "wlp3s0" },
-	{ run_command, "%s    ", "find /home/ak/.mail/Inbox/new -type f -printf . | wc -c" },
-  { cpu_perc,     "%s     ", "NULL" },
-  { ram_used,   "%s    ", "NULL" },
-  { temp,   "%sC     ",  "/sys/class/thermal/thermal_zone0/temp" },
-	{ wifi_essid, "%s    ", "wlp3s0" },
-	{ battery_state, "%s ", "BAT0" },
-	{ battery_perc, "%3s%%     ", "BAT0" },
-  { battery_remaining, "%s   ", "BAT0" },
-	{ datetime, "%s", "%a %d %H:%M" },
+  { cpu_perc, "%2s%% ", ""},
+  { load_avg, "%5s | ", ""},
+  { ram_perc, "%s%% | ", ""},
+  { disk_free, "%s |", "/" },
+  { netspeed_active_tx, "%6s↑ ", ""},
+  { netspeed_active_rx, "%6s↓ | ", ""},
+  { ipv4_active, "%s | ", ""},
+  { battery_state, "%s ", "BAT0"},
+  { battery_perc, "%2s%% | ", "BAT0"},
+  { datetime, "%s", "%a %b%d %H:%M:%S"},
 };

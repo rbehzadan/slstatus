@@ -40,6 +40,11 @@ const char *keymap(void);
 /* load_avg */
 const char *load_avg(void);
 
+/* netactive */
+const char *ipv4_active(void);
+const char *netspeed_active_rx(void);
+const char *netspeed_active_tx(void);
+
 /* netspeeds */
 const char *netspeed_rx(const char *interface);
 const char *netspeed_tx(const char *interface);
